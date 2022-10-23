@@ -29,6 +29,7 @@ body {
 .navbar-links {
     height: 100%;
     text-align: center;
+    background-color: red;
 }
 .navbar-links ul {
     display: flex;
