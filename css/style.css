@@ -81,6 +81,14 @@ body {
     font-size: 12rem;
     text-align:center;
 }
+.box {
+    color: white;
+    font-size: 4vw;
+    padding: 10px;
+    background: yellowgreen;
+    margin: 10px 0;
+    text-align: center;
+    }
 .grid {
       display: grid;
       grid-template-rows: repeat(6, 1fr);
@@ -152,13 +160,5 @@ body {
     }
     .grid {
     display: block;
-    }
-  .box {
-    color: white;
-    font-size: 4vw;
-    padding: 10px;
-    background: yellowgreen;
-    margin: 10px 0;
-    text-align: center;
     }
 }
