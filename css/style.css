@@ -1,4 +1,8 @@
-* {
+@font-face {
+    font-family: myFirstFont;
+    src: url("creattion demo.otf");
+ }
+ * {
     box-sizing: border-box;
 }
 body {
@@ -26,7 +30,10 @@ body {
     padding: 0 5%;
     text-transform: uppercase;
     font-family: "Creattion Demo", Calibri, Tahoma, sans-serif;
-    
+}
+.brand-title a {
+    color: #cad2c5;
+    text-decoration: none;
 }
 .navbar-links {
     height: 100%;
@@ -72,8 +79,6 @@ body {
 .welcome {
     color: var(--primary-color);
     font-size: 10rem;
-    
-    
     text-align:center;
     
 }
