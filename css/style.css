@@ -4,11 +4,12 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: #2f3e46;
 }
 
 :root {
-    --primary-color: #ED8A34;
-    --black-colour: #000;
+    --primary-color: #ED8A34;   /*orange*/
+    --black-colour: #000;       /*black*/
 }
 
 /* Navbar */
