@@ -8,7 +8,8 @@
 body {
     margin: 0;
     background-color: #2f3e46;
-    color: #cad2c5 
+    color: #cad2c5;
+    font-family: "Creattion Demo", Calibri, Tahoma, sans-serif;
 }
 
 :root {
