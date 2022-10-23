@@ -46,17 +46,6 @@ body {
 .navbar-links li a:hover {
     color: var(--primary-color);
 }
-.nav-button button{
-    padding: 5px 15px;
-    border-radius: 2rem;
-    color: var(--primary-color);
-    background-color: transparent;
-    border: 2px solid var(--primary-color)
-}
-.nav-button button:hover {
-    background-color: var(--primary-color);
-    color: white;
-}
 .toggle-button {
     position: absolute;
     top: .75rem;
@@ -101,9 +90,6 @@ body {
     }
     .navbar-links.active {
         display: flex;
-    }
-    .nav-button {
-        display: none;
     }
     .login {
         display: block;
