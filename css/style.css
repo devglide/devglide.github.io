@@ -28,6 +28,7 @@ body {
 }
 .navbar-links {
     height: 100%;
+    text-align: center;
 }
 .navbar-links ul {
     display: flex;
