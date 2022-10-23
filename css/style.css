@@ -78,7 +78,7 @@ body {
 }
 .welcome {
     color: var(--primary-color);
-    font-size: 10rem;
+    font-size: 1rem;
     text-align:center;
     
 }
