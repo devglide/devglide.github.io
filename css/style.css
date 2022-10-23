@@ -78,7 +78,7 @@ body {
 }
 .welcome {
     color: var(--primary-color);
-    font-size: 5rem;
+    font-size: 15rem;
     text-align:center;
     
 }
@@ -111,4 +111,6 @@ body {
     .login {
         display: block;
     }
+    .welcome {
+    font-size: 5rem;
 }
