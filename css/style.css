@@ -9,8 +9,8 @@ body {
 }
 
 :root {
-    --primary-color: #ED8A34;   /*orange*/
-    --black-colour: #000;       /*black*/
+    --primary-color: #cad2c5 ;   /*olight*/
+    --black-colour: #84a98c;       /*light2*/
 }
 
 /* Navbar */
