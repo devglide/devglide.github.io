@@ -1,6 +1,6 @@
 @font-face {
-    font-family: myFirstFont;
-    src: url("creattion demo.otf");
+    font-family: "Creattion Demo;
+    src: url(http://www.devonglide.com/"Creattion Demo.otf");
  }
  * {
     box-sizing: border-box;
