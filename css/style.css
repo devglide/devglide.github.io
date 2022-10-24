@@ -9,7 +9,7 @@ body {
     margin: 0;
     background-color: #2f3e46;
     color: #cad2c5;
-    font-family: "Creattion Demo", Calibri, Tahoma, sans-serif;
+    font-family: Calibri, Tahoma, sans-serif;
 }
 
 :root {
@@ -33,7 +33,6 @@ body {
     font-family: "Creattion Demo", Calibri, Tahoma, sans-serif;
 }
 .brand-title a {
-    font-family: "Creattion Demo";
     color: #cad2c5;
     text-decoration: none;
 }
