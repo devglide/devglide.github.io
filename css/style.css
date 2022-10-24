@@ -109,6 +109,7 @@ body {
     .box:nth-child(5),
     .box:nth-child(6) {
       grid-column: span 4;
+      background-color: green;
       }
     .box:nth-child(7),
     .box:nth-child(8),
