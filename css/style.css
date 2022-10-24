@@ -17,6 +17,21 @@ body {
     --black-colour: #84a98c;       /*light2*/
 }
 
+.back-to-top-link {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 2rem;
+  line-height: 3rem;
+  text-align: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: #d6e3f0;
+  /* emoji don't behave like regular fonts
+     so this helped position it correctly */
+  padding: 0.25rem;
+}
+
 /* Navbar */
 .navbar {
     display: flex;
@@ -170,4 +185,11 @@ body {
     margin: 10px 0;
     text-align: center;
     }
+}
+
+/* Smooth scrolling IF user doesn't have a preference due to motion sensitivities */
+@media screen and (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
 }
