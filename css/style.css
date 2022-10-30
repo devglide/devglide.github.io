@@ -1,90 +1,22 @@
-@font-face {
-    font-family: 'Creattion Demo';
-    src: url(https://www.devonglide.com/CreattionDemo.otf);
- }
- * {
+* {
     box-sizing: border-box;
 }
-body {
-    margin: 0;
-    background-color: #2f3e46;
-    color: #cad2c5;
-    font-family: Calibri, Tahoma, sans-serif;
-}
-
 :root {
     --primary-color: #cad2c5 ;   /*olight*/
     --black-colour: #84a98c;       /*light2*/
 }
-
-.back-to-top-link {
-  display: inline-block;
-  text-decoration: none;
-  font-size: 2rem;
-  line-height: 3rem;
-  text-align: center;
-  width: 3rem;
-  height: 3rem;
-  border-radius: 50%;
-  background-color: #d6e3f0;
-  /* emoji don't behave like regular fonts
-     so this helped position it correctly */
-  padding: 0.25rem;
-  // `fixed` is fallback when `sticky` not supported
-  position: fixed;
-  // preferred positioning, requires prefixing for most support, and not supported on Safari
-  // @link https://caniuse.com/#search=position%3A%20sticky
-  position: sticky;
-  // reinstate clicks
-  pointer-events: all;
-  // achieves desired positioning within the viewport
-  // relative to the top of the viewport once `sticky` takes over, or always if `fixed` fallback is used
-  top: calc(100vh - 5rem);
-
-  // ... styles written earlier
+body {
+    background-color: #2f3e46;
+    color: #cad2c5;
+    font-family: Calibri, Tahoma, sans-serif;
+    font-size: 15px;
 }
-
-/* How far of a scroll travel within <main> prior to the
-   link appearing */
-$scrollLength: 100vh;
-
-.back-to-top-wrapper {
-  // uncomment to visualize "track"
-  // outline: 1px solid red;
-  position: absolute;
-  top: $scrollLength;
-  right: 0.25rem;
-  // Optional, extends the final link into the
-  // footer at the bottom of the page
-  // Set to `0` to stop at the end of `main`
-  bottom: -5em;
-  // Required for best support in browsers not supporting `sticky`
-  width: 3em;
-  // Disable interaction with this element
-  pointer-events: none;
-}
-
-main {
-  // leave room for the "scroll track"
-  padding: 0 3rem;
-  // required to make sure the `absolute` positioning of
-  // the anchor wrapper is indeed `relative` to this element vs. the body
-  position: relative;
-  max-width: 50rem;
-  margin: 2rem auto;
-
-  // Optional, clears margin if last element is a block item
-  *:last-child {
-    margin-bottom: 0;
-  }
-}
-
 /* Navbar */
 .navbar {
     display: flex;
     position: relative;
     justify-content: space-between;
-    align-items: center;   
+    align-items: center;  
 }
 .brand-title {
     font-size: 1.5rem;
@@ -129,68 +61,78 @@ main {
     width: 30px;
     height: 21px;
 }
-.login {
-    display: none;
-}
 .toggle-button .line {
     height: 3px;
     width: 100%;
     background-color: var(--black-colour);
     border-radius: 10px;
 }
-.welcome .box {
-    color: var(--primary-color);
-    font-size: 12rem;
-    text-align:center;
+.mydiv {
+    display: grid;
+    padding-top: 10px;
+    column-gap: 50px;
+    row-gap: 50px;
+    width: 1000px;
+    margin: auto;
 }
-.box {
-    color: white;
-    font-size: 4vw;
-    padding: 10px;
-    margin: 10px 0;
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(240, 5, 5, 0.8);
+    padding: 20px;
+    font-size: 30px;
     text-align: center;
+  }
+  img { 
+    max-width: 100%; 
+    height: auto;
+    
+ }
+  .grid-item1 {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    grid-column-start: 1;
+    grid-column-end: 3;
+    
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+  .grid-item2 {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    grid-row-start: 2;
+    grid-column-start: 1;
+    
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+@media (max-width: 1112px) {
+    body {
+        color: #cad2c5;
+        font-family: Calibri, Tahoma, sans-serif;
+        font-size: 15px;
     }
-.grid {
-      display: grid;
-      grid-template-rows: repeat(6, 1fr);
-      grid-template-columns: repeat(12, 1fr);
-      grid-gap: 10px;
+    .grid-item1 {
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+        width: 400px;
+        margin: auto;
+    
       }
-    .box {
-      margin: 0;
-      }
-    .box:nth-child(1) {
-      grid-column: span 12;
-      }
-    .box:nth-child(2), 
-    .box:nth-child(3) {
-      grid-column: span 6;
-      background-color: pink;
-      }
-    .box:nth-child(4),
-    .box:nth-child(5),
-    .box:nth-child(6) {
-      grid-column: span 4;
-      background-color: green;
-      }
-    .box:nth-child(7),
-    .box:nth-child(8),
-    .box:nth-child(9),
-    .box:nth-child(10) {
-      grid-column: span 3;
-      background-color: blue;
-      }
-    .box:nth-child(11),
-    .box:nth-child(12),
-    .box:nth-child(13),
-    .box:nth-child(14),
-    .box:nth-child(15),
-    .box:nth-child(16) {
-      grid-column: span 2;
-      }
+    img { 
+        max-width: 100%; 
+        height: auto;
+        
+     }
+}
 
-
-@media (max-width: 800px) {
+@media (max-width: 414px) {
+    body {
+        color: #cad2c5;
+        font-family: Calibri, Tahoma, sans-serif;
+        font-size: 15px;
+    }
     .navbar {
         flex-direction: column;
         align-items: flex-start;
@@ -215,28 +157,4 @@ main {
     .navbar-links.active {
         display: flex;
     }
-    .login {
-        display: block;
-    }
-    .welcome {
-    font-size: 3rem;
-    padding: 5%;
-    }
-    .grid {
-    display: block;
-    }
-    .box {
-    color: white;
-    font-size: 4vw;
-    padding: 10px;
-    margin: 10px 0;
-    text-align: center;
-    }
-}
-
-/* Smooth scrolling IF user doesn't have a preference due to motion sensitivities */
-@media screen and (prefers-reduced-motion: no-preference) {
-  html {
-    scroll-behavior: smooth;
-  }
 }
