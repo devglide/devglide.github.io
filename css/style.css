@@ -75,56 +75,86 @@ body {
     width: 1000px;
     margin: auto;
 }
-.grid-item {
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(240, 5, 5, 0.8);
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
+@font-face {
+    font-family: 'Jo_wrote_a_lovesong';
+    src: url(https://www.devonglide.com/Jo_wrote_a_lovesong.ttf);
   }
-  img { 
-    max-width: 100%; 
-    height: auto;
+
+.container {
+    background-color: #000637;
+    display: flex;
+    flex-direction: column;
     
- }
-  .grid-item1 {
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    grid-column-start: 1;
-    grid-column-end: 3;
+    padding-top: 5%;
+    max-width: 40rem;
+    height: 100vh;
+    margin: auto;
+}
     
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
-  }
-  .grid-item2 {
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    grid-row-start: 2;
-    grid-column-start: 1;
-    
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
-  }
+.inside {
+    background-color: #162C80;
+    min-height: 28rem;
+    font-size: 3.75rem;
+    color: rgb(249, 249, 249);
+    padding:2.5rem 2rem 0rem; 
+    font-family: "K2D", "Jo_wrote_a_lovesong";  
+}
+.home {
+    color: #fff;
+    padding-top: 3rem;
+    font-size: 1.0rem;
+    font-family: sans-serif;  
+}
+
+.image {
+    width: 8rem;
+    margin: -4rem auto;
+    border-radius: 90px;
+
+}
 @media (max-width: 1112px) {
     body {
         color: #cad2c5;
         font-family: Calibri, Tahoma, sans-serif;
         font-size: 15px;
     }
-    .grid-item1 {
-        border: 1px solid rgba(0, 0, 0, 0.8);
-        padding: 20px;
-        font-size: 30px;
-        text-align: center;
-        width: 400px;
-        margin: auto;
+    @font-face {
+    font-family: 'Jo_wrote_a_lovesong';
+    src: url(https://www.devonglide.com/Jo_wrote_a_lovesong.ttf);
+  }
+
+.container {
+    background-color: #000637;
+    display: flex;
+    flex-direction: column;
     
-      }
-    img { 
-        max-width: 100%; 
-        height: auto;
-        
-     }
+    padding-top: 5%;
+    max-width: 40rem;
+    height: 100vh;
+    margin: auto;
+}
+    
+.inside {
+    background-color: #162C80;
+    min-height: 28rem;
+    font-size: 3.75rem;
+    color: rgb(249, 249, 249);
+    padding:2.5rem 2rem 0rem; 
+    font-family: "K2D", "Jo_wrote_a_lovesong";  
+}
+.home {
+    color: #fff;
+    padding-top: 3rem;
+    font-size: 1.0rem;
+    font-family: sans-serif;  
+}
+
+.image {
+    width: 8rem;
+    margin: -4rem auto;
+    border-radius: 90px;
+
+}
 }
 
 @media (max-width: 414px) {
