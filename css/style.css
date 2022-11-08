@@ -5,12 +5,7 @@
     --primary-color: #cad2c5 ;   /*olight*/
     --black-colour: #84a98c;       /*light2*/
 }
-body {
-    background-color: #2f3e46;
-    color: #cad2c5;
-    font-family: Calibri, Tahoma, sans-serif;
-    font-size: 15px;
-}
+
 /* Navbar */
 .navbar {
     display: flex;
