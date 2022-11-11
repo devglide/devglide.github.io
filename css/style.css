@@ -184,6 +184,15 @@
     }
 }
 */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #2196F3;
+    
+}
+
 .container {
     background-color: rgb(37, 4, 84);
     display: grid;
